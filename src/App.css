@@ -1,0 +1,40 @@
+/* App.css */
+
+body {
+  padding-top: 56px; /* Height of the fixed navbar */
+  font-family: "Arial", sans-serif; /* Use a standard font family */
+}
+
+.navbar {
+  background-color: #343a40; /* Navbar background color */
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; /* Navbar text color */
+}
+
+.navbar-dark .navbar-toggler-icon {
+  border-color: #ffffff; /* Navbar toggle button color */
+}
+
+.container {
+  margin-top: 20px; /* Add some space at the top of the content */
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  body {
+    padding-top: 48px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+    display: table; /* Center the brand in the navbar for smaller screens */
+  }
+
+  .container {
+    margin-top: 10px; /* Adjust margin for smaller screens */
+  }
+}

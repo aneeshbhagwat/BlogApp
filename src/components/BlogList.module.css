@@ -1,0 +1,37 @@
+/* BlogList.module.css */
+
+.PostCard {
+  background-color: #f8f9fa; /* Set suitable background color */
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.PostTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+.PostContent {
+  margin-bottom: 12px;
+}
+
+.PostDate {
+  color: #6c757d; /* Set a subdued color for the date */
+}
+
+.PaginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Add styles for the active page in the pagination */
+.pagination-link.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
