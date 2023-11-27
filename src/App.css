@@ -21,6 +21,9 @@ body {
 .container {
   margin-top: 20px; /* Add some space at the top of the content */
 }
+.pagination {
+  justify-content: center;
+}
 
 /* Responsive styles */
 @media (max-width: 767px) {

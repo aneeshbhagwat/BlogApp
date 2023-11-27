@@ -1,4 +1,7 @@
+/* eslint-env browser */
+
 import React from "react";
+import styles from "./Pagination.module.css";
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   const pageNumbers = Array.from(
@@ -7,20 +10,27 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   );
 
   return (
-    <nav>
-      <ul className="pagination">
-        {pageNumbers.map((page) => (
-          <li
-            key={page}
-            className={`page-item ${currentPage === page ? "active" : ""}`}
-          >
-            <button className="page-link" onClick={() => onPageChange(page)}>
-              {page}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div className={styles.PaginationContainer}>
+      <nav>
+        <ul className={`pagination ${styles.pagination}`}>
+          {pageNumbers.map((page) => (
+            <li
+              key={page}
+              className={`page-item ${currentPage === page ? "active" : ""} ${
+                styles["page-item"]
+              }`}
+            >
+              <button
+                className={`page-link ${styles["page-link"]}`}
+                onClick={() => onPageChange(page)}
+              >
+                {page}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 };
 

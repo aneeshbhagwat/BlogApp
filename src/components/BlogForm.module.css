@@ -1,11 +1,11 @@
 /* BlogForm.module.css */
 
 .Form {
-  width: 60%; /* Set the width of the form */
-  margin: 20px auto; /* Center the form on the page */
-  padding: 20px; /* Add some padding inside the form */
-  border: 2px solid #ccc; /* Add a solid border */
-  background-color: #f8f9fa; /* Set a suitable background color */
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  background-color: #f8f9fa;
 }
 
 .form-content {
@@ -35,7 +35,6 @@
   margin-top: 4px;
 }
 
-/* Style the submit button */
 button {
   background-color: #28a745;
   color: #fff;
@@ -45,7 +44,6 @@ button {
   cursor: pointer;
 }
 
-/* Add hover effect to the submit button */
 button:hover {
   background-color: #218838;
 }

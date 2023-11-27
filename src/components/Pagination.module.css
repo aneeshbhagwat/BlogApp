@@ -1,0 +1,33 @@
+/* Pagination.module.css */
+
+.PaginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.page-item {
+  margin-right: 5px;
+}
+
+.page-link {
+  cursor: pointer;
+  padding: 6px 12px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 4px;
+}
+
+.page-link:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
