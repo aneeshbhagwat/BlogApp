@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
-import styles from "./BlogForm.module.css"; // Import the CSS module
+import styles from "./BlogForm.module.css";
 
 const schema = Yup.object().shape({
   title: Yup.string().required("Title is required"),
