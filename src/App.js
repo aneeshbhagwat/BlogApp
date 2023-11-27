@@ -42,21 +42,16 @@ const App = () => {
     <Router>
       {/* Use Bootstrap Navbar */}
       <Navbar bg="dark" expand="lg">
-        <Navbar.Brand href="/">Blog App</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Link to="/" className="nav-link">
-              My Blog's
-            </Link>
-          </Nav>
-          <Nav className="ml-auto">
-            {/* Replace Link with a Button */}
-            <Link to="/add" className="nav-link">
-              <Button variant="primary">Add New Post</Button>
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
+        <Nav className="mr-auto">
+          <Link to="/" className="nav-link">
+            <Button variant="outline-secondary">My Blog's</Button>{" "}
+          </Link>
+        </Nav>
+        <Nav className="ml-auto">
+          <Link to="/add" className="nav-link">
+            <Button variant="primary">Add New Post</Button>
+          </Link>
+        </Nav>
       </Navbar>
       <Routes>
         <Route

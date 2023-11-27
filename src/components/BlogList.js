@@ -1,3 +1,5 @@
+// BlogList.js
+
 import React, { useState } from "react";
 import Pagination from "./Pagination";
 import styles from "./BlogList.module.css"; // Import the CSS module
@@ -91,7 +93,28 @@ const BlogList = ({ blogs, dispatch }) => {
   };
 
   return (
-    <div className="container">
+    <div className={`container ${styles.FormContainer}`}>
+      {/* Form Structure */}
+      <form className={styles.FormStructure}>
+        <div className="mb-3">
+          <label htmlFor="searchQuery" className="form-label">
+            Search
+          </label>
+          <input
+            type="text"
+            id="searchQuery"
+            className={`form-control ${styles.Input}`}
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
+        {/* Add any other form fields as needed */}
+        <button type="button" className="btn btn-primary">
+          Search
+        </button>
+      </form>
+
+      {/* Blog Content */}
       <h2 className="text-center mt-4">Posts</h2>
       {searchQuery && (
         <div className="text-center my-4">
